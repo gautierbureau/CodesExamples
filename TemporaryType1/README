@@ -1,0 +1,1 @@
+Temporary types are always r-values (values ONLY allowed on the right hand sight of an assignment [e.g., lvalue = rvalue]), so that can only be assigned to const reference.

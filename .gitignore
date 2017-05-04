@@ -1,0 +1,17 @@
+*/build/*
+*/.DS_Store
+.DS_Store
+
+*.o
+
+Arrays/main
+Assembleur/main_debug
+FunctionPointer/main
+Memory/main
+SizeOf/main
+main
+*.so
+*.a
+ConvertMatrix/seldon/
+Library/Dynamic/Cmake/build/
+Library/Dynamic/Cmake/Library1/build/

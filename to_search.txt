@@ -1,0 +1,24 @@
+Jeu d'instructions
+Compilers: Principles, Techniques, and Tools
+
+https://www.lri.fr/~filliatr/ens/compil/cours/cours1b-handout.pdf
+
+https://fr.wikipedia.org/wiki/Virtualisation
+https://fr.wikipedia.org/wiki/Hyperviseur
+https://fr.wikipedia.org/wiki/OpenStack
+https://fr.wikipedia.org/wiki/Kernel-based_Virtual_Machine
+https://fr.wikipedia.org/wiki/QEMU
+https://fr.wikipedia.org/wiki/Machine_virtuelle
+https://en.wikipedia.org/wiki/Cloud_computing
+https://en.wikipedia.org/wiki/Operating-system-level_virtualization
+https://en.wikipedia.org/wiki/Hypervisor
+https://en.wikipedia.org/wiki/Kernel_(operating_system)
+https://en.wikipedia.org/wiki/Operating_system
+https://en.wikipedia.org/wiki/Booting
+https://en.wikipedia.org/wiki/Apache_CloudStack
+
+The Art of Linux Kernel Design: Illustrating the Operating System Design Principle and Implementation
+
+https://perso.telecom-paristech.fr/duc/cours/tpt35/decouverte_noyau.html
+
+https://free-electrons.com/doc/training/linux-kernel/

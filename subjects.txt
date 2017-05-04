@@ -1,0 +1,157 @@
+If (i=0) : SyntaxTrap
+++i et i++ avec des if : SyntaxTrap
+Classe vs objets : Class 
+Heritage, masquage d'une fonction : Inheritance 
+ 
+Polymorphisme : Polymorphism
+Template
+methode Virtuelle vs methode virtuelle pure (donne une classe abstraite si yen a une) (1996 indicates that approximately 6–13% of execution time is spent simply dispatching to the correct function) 
+classe abstraite (une methode virtuelle pure) et interface (que des methodes virtuelles pures)
+Héritage simple et multiple
+Surcharge d'opérateurs
+Pointeur et adresses
+Smart pointeur
+&& et ** (pointer to pointer)
+New et delete
+Stl conteneurs
+Crtp (static polymorphism) Counter example is a base use of crtp 
+Raii 
+Variadic argument
+Factory
+Singleton
+Specialization and partial, partial for classes is ok but not for function so the workaround of Sebastien
+Policy
+Constexpr -> compile time constant
+Meta programming
+[] vs vector
+Library
+noexcept
+static 
+std c++11
+friend
+enum, enum class, enum struct
+iterator
+fonctions lambda 
+move semantique
+decltype, decltype(auto) ?
+debug vs release 
+NDEBUG et assert
+static_assert
+find
+erreurs et execptions
+Variadic template
+Template metaprogramming -> exemple du factoriel en runtime et en template
+Expression templates
+template template
+trait class ?
+lvalue and rvalue
+helper class
+Impl class -> see Input Parameter for example PseudoNormals (not sure about it)
+Instance class
+overload/surcharge
+static if
+Manager
+tuple
+threads de la librairie standard 
+map, unoredered_map, set, unordered_set
+std::regex 
+Return value optimization
+Copy elision
+memory in c++
+Optimizing compiler (wikipedia) -> Inline expansion is one onf them
+Adressage mémoire
+bit etc 
+initializer_list
+overide and final
+no return
+explicit
+std::forward
+recursive iterator as in Global and local operator
+mutex pour le stherad avec objet mutable
+decay_t
+typage dynamique
+typage static
+recursif factorielle
+mpi
+blas
+pimpl idiom -> facade 
+
+Reason for #ifndef :
+If a header file happens to be included twice, the compiler will process its contents twice. This is very likely to cause an error, e.g. when the compiler sees the same structure definition twice. Even if it does not, it will certainly waste time.
+ 
+valgrind
+cachegrind
+
+allocation memoire statique, automatique, dynamique
+Stack Memory vs Heap Memory
+
+https://fr.wikipedia.org/wiki/M%C3%A9moire_(informatique)
+mémoire de masse ou mémoire de stockage
+mémoire vive 
+mémoire cache 
+registre de processeur 
+
+Polymorphism enables one common interface for many implementations, and for objects to act differently under different circumstances.
+C++ supports several kinds of static (resolved at compile-time) and dynamic (resolved at run-time) polymorphisms, supported by the language features described above. Compile-time polymorphism does not allow for certain run-time decisions, while runtime polymorphism typically incurs a performance penalty.
+Static polyphormism (function overloading et template (rtp))
+Dynamic polyphormism (heritage et virtual functions)
+Static polymorphism executes faster, because there is no dynamic dispatch overhead, but requires additional compiler support. Further, static polymorphism allows greater static analysis by compilers (notably for optimization), source code analysis tools, and human readers (programmers). Dynamic polymorphism is more flexible but slower—for example, dynamic polymorphism allows duck typing, and a dynamically linked library may operate on objects without knowing their full type.
+Static polymorphism typically occurs in ad hoc polymorphism and parametric polymorphism, whereas dynamic polymorphism is usual for subtype polymorphism. However, it is possible to achieve static polymorphism with subtyping through more sophisticated use of template metaprogramming, namely the curiously recurring template pattern.
+dynamically polymorphic behaviour is (typically) obtained by the creation of virtual look-up tables for classes with virtual methods, tables that are traversed at run time to identify the method to be invoked. Thus, run-time polymorphism necessarily entails execution overhead (though on modern architectures the overhead is small).
+
+Benefits and drawbacks of template metaprogramming
+
+Compile-time versus execution-time tradeoff 
+    If a great deal of template metaprogramming is used, compilation may become slow; section 14.7.1 [temp.inst] of the current standard defines the circumstances under which templates are implicitly instantiated. Defining a template does not imply that it will be instantiated, and instantiating a class template does not cause its member definitions to be instantiated. Depending on the style of use, templates may compile either faster or slower than hand-rolled code.
+Generic programming 
+    Template metaprogramming allows the programmer to focus on architecture and delegate to the compiler the generation of any implementation required by client code. Thus, template metaprogramming can accomplish truly generic code, facilitating code minimization and better maintainability[citation needed].
+Readability 
+    With respect to C++, the syntax and idioms of template metaprogramming are esoteric compared to conventional C++ programming, and template metaprograms can be very difficult to understand. [5][6] 
+	
+The operations performed at compile time usually include syntax analysis, various kinds of semantic analysis (e.g., type checks and instantiation of template) and code generation.
+Link time
+Runtime
+
+http://apais.developpez.com/tutoriels/c++/fonctions-virtuelles-en-cpp/?page=page_1#LII
+
+Integration continue :
+- test unitaire
+- test d'integration
+- test de validation
+
+List de langage: 
+fortran
+lisp
+cobol
+algol
+pascal
+C
+Prolog
+SQL
+Java
+Ocaml
+C++
+C#
+D
+Python 
+Ruby
+Perl
+Php
+Visual Basic
+VB.NET
+Delphi
+Objective-C
+SWIFT
+Tcl
+Javascript
+coq
+scala 
+
+FIX 
+FQL
+Protocole proprietaire
+
+TCP/IP
+
+
+

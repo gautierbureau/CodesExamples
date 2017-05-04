@@ -1,0 +1,119 @@
+Gestionnaire de Tickets :
+- Redmine (https://bitnami.com/stack/redmine) 
+- GitLab CE (sous licence MIT)
+- FusionForge (sous licence GNU GPL)
+- Trac (logiciel)
+- Wit (logiciel)
+- TaskJuggler
+- OpenProj
+- Tuleap (sous licence GNU GPL)
+- Mantis
+
+Gestionnaire de versions :
+- git
+- svn
+- cvs
+- Mercurial
+
+IDE :
+- Eclipse
+- Xcode
+- Visual Studio
+- CodeBlocks
+- KDevelop
+- Netbeans
+
+Documentation :
+- Doxygen
+- 
+
+Build manager :
+- Makefile
+- autoconf/automake (configure file)
+- scons (python)
+- Cmake
+
+Tests unitaires : 
+- cppunit
+- JUnit
+
+Integration continue :
+- Jenkins
+- CruiseControl
+- Hudson
+- TeamCity
+
+Couverture de code :
+- gcov
+- lcov
+- gcvor
+
+Analyse statique de code :
+- cppcheck
+- BLAST
+
+Analyse dynamique / Analyse de performances / profilage de code :
+- valgrind (fuite memoire)
+- cachegrind (analyse défauts de cache)
+- callgrind (compte les appels des focntions)
+- massif (inspecter la pile)
+- gprof
+
+
+Debugueur :
+- Gdb
+- lldb
+
+Wiki :
+- Markdown
+- 
+
+Web :
+- MySQL (phpMyAdmin)
+- Apache (apachectl)
+- Nginx
+
+Serveur virtuel :
+- MAMP
+- WAMP
+- XAMPP
+
+Bases de donnees :
+- MySQL
+- PostgreSQL
+- SQLite
+- Oracle
+- Microsoft SQL Server
+
+Machines virtuelles :
+- OpenStack
+- CloudStack
+- VirtualBox
+- Vagrant
+- VMware
+
+Python :
+- IPython
+- Jupyter
+- Spyder
+- PyCharm
+- Numpy
+- Matplotlib (pyplot)
+- Scipy
+- Bokeh
+
+Client FTP :
+- FileZilla
+
+Editeurs de text en vrac :
+- Sublime Text
+- Atom
+- PHPStorm
+- Texmate
+- Notepad
+
+Autres :
+- GNU libtool (créer des librairies portables)
+- pkg-config (interroger les bibliothèques installées lors de la compilation de code source)
+- Gitbook
+- Forge (système de gestion de développement collaboratif de logiciel)
