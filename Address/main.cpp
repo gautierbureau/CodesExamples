@@ -8,7 +8,7 @@ class Foo
 public:
 	
 	//! Constructor
-	Foo() = default;
+	Foo() { std::cout << this << std::endl; }
 	
 	//! Destructor.
     ~Foo() = default;
@@ -37,6 +37,7 @@ private:
 Foo::Foo(int value)
 	: parameter_(value)
 {
+	std::cout << this << std::endl;
 }
 
 void Foo::PrintParameter()
@@ -61,6 +62,7 @@ int main ()
    foo_deref_no_add.PrintParameter();
    
    std::cout << &foo_deref_add << std::endl;
+   std::cout << foo_ptr << std::endl;
    std::cout << &foo_deref_no_add << std::endl;
    
    return 0;

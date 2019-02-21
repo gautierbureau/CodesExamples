@@ -1,0 +1,19 @@
+g++ main.cpp -02 -c -S -o - -masm=intel
+15478  g++ main.cpp -O2 -c -S -o - -masm=intel
+15479  g++ main.cpp -O2 -c -S -o - -masm=att 
+15480  g++ main.cpp -O2 -c -S -o - -masm=intel
+15481  g++ main.cpp -O2 -c -S -o - 
+15482  g++ main.cpp -O2 -c -S -o 
+15483  g++ main.cpp -O2 -c -S -o - 
+15484  g++ main.cpp -O2 -c -S -o bin
+15485  ls
+15486  objdump bin
+15487  less bin
+15488  g++ main.cpp -O2 -c -S -o assembly
+15489  rm bin
+15490  ls
+15491  rm main
+15492  g++ main.cpp -S 
+15493  ls
+15494  less main.s
+15495  g++ main.cpp -O2 -S 
