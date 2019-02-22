@@ -15,6 +15,8 @@ class Singleton {
   private:
 
     int count_;
+
+    int* count_ptr_;
 };
 
 class SingletonAdd {

@@ -8,6 +8,9 @@ Singleton::Singleton() {
   std::cout << "Singleton::Singleton()" << std::endl;
   ++count_;
   std::cout << "count_ " << count_ << std::endl;
+
+  count_ptr_ = new int(12);
+  std::cout << "count_ptr_ " << *count_ptr_ << std::endl;
 }
 
 void Singleton::add() {
@@ -18,6 +21,11 @@ void Singleton::add() {
 
 Singleton::~Singleton() {
   std::cout << "Singleton::~Singleton()" << std::endl;
+  std::cout << "count_ptr_ " << *count_ptr_ << std::endl;
+  std::cout << "count_ " << count_ << std::endl;
+  count_ = 0;
+  std::cout << "count_ " << count_ << std::endl;
+  delete count_ptr_;
 }
 
 SingletonAdd::SingletonAdd() {
