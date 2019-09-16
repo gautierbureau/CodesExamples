@@ -9,7 +9,7 @@ INCLUDE_DIR =
 # -g = symbol de debug
 # -O = optimisation du code par le compilateur
 # -D = macro
-CXXFLAGS = -std=c++14 -g -O0
+CXXFLAGS = -std=c++14
 LDFLAGS =
 
 EXEC = main

@@ -1,0 +1,66 @@
+#0  0x00007f71d36d8924 in write () from /lib64/libc.so.6
+#1  0x00007f71d366ad6d in _IO_new_file_write () from /lib64/libc.so.6
+#2  0x00007f71d366a04f in new_do_write () from /lib64/libc.so.6
+#3  0x00007f71d366bf59 in __GI__IO_do_write () from /lib64/libc.so.6
+#4  0x00007f71d366c353 in __GI__IO_file_overflow () from /lib64/libc.so.6
+#5  0x00007f71d401e26a in std::ostream::put(char) () from /lib64/libstdc++.so.6
+#6  0x00007f71d401e45f in std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) () from /lib64/libstdc++.so.6
+#7  0x0000000000e591f1 in DYN::Timers::~Timers (this=0x163ada0 <DYN::Timers::INSTANCE>, __in_chrg=<optimized out>) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:36
+#8  0x00007f71cc1770dc in __static_initialization_and_destruction_0 (__initialize_p=0, __priority=65535) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:27
+#9  0x00007f71cc177113 in _GLOBAL__sub_D_DYNTimer.cpp(void) () at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:75
+#10 0x00007f71d7c696a4 in _dl_close_worker () from /lib64/ld-linux-x86-64.so.2
+#11 0x00007f71d7c6a2be in _dl_close () from /lib64/ld-linux-x86-64.so.2
+#12 0x00007f71d3722b84 in _dl_catch_error () from /lib64/libc.so.6
+#13 0x00007f71d6ed7665 in _dlerror_run () from /lib64/libdl.so.2
+#14 0x00007f71d6ed708f in dlclose () from /lib64/libdl.so.2
+#15 0x0000000000d2864c in DYN::SubModelFactories::reset (this=0x163aa60 <DYN::SubModelFactory::factories_>) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Modeler/Common/DYNSubModelFactory.cpp:87
+#16 0x0000000000d28d32 in DYN::SubModelFactory::resetFactories () at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Modeler/Common/DYNSubModelFactory.cpp:135
+#17 0x0000000000c947ec in DYN::Simulation::clean (this=0x20ab0b0) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Simulation/DYNSimulation.cpp:261
+#18 0x0000000000c91235 in launchSimu (jobsFileName="nrt/data/IEEE/IEEE14_BlackBoxModels/IEEE14.jobs") at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Simulation/DYNSimulationLauncher.cpp:73
+#19 0x0000000000c4e6cc in main (argc=2, argv=0x7fff9da361b8) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Launcher/main.cpp:115
+
+#0  0x00007f535f7af97b in int std::__int_to_char<char, unsigned long>(char*, unsigned long, char const*, std::_Ios_Fmtflags, bool) () from /lib64/libstdc++.so.6
+#1  0x00007f535f7b0c04 in std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const () from /lib64/libstdc++.so.6
+#2  0x00007f535f7bcc55 in std::ostream& std::ostream::_M_insert<long>(long) () from /lib64/libstdc++.so.6
+#3  0x0000000000e5a7bf in DYN::Timers::~Timers (this=0x163bdc0 <DYN::Timers::INSTANCE>, __in_chrg=<optimized out>) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:36
+#4  0x00007f535edc7632 in __cxa_finalize () from /lib64/libc.so.6
+#5  0x00007f5357890763 in __do_global_dtors_aux () from /home/bureaugau/Codes/dynamo/dynawo-worktree/install/gcc7/41_static_compilation_rebase/Debug/static/dynawo/ddb/LOAD_ALPHA_BETA.so
+#6  0x00007ffe55f268d0 in ?? ()
+#7  0x00007f53634076a4 in _dl_close_worker () from /lib64/ld-linux-x86-64.so.2
+
+#0  0x00007f3e681c6924 in write () from /lib64/libc.so.6
+#1  0x00007f3e68158d6d in _IO_new_file_write () from /lib64/libc.so.6
+#2  0x00007f3e6815804f in new_do_write () from /lib64/libc.so.6
+#3  0x00007f3e68159f59 in __GI__IO_do_write () from /lib64/libc.so.6
+#4  0x00007f3e6815a353 in __GI__IO_file_overflow () from /lib64/libc.so.6
+#5  0x00007f3e68b0c26a in std::ostream::put(char) () from /lib64/libstdc++.so.6
+#6  0x00007f3e68b0c45f in std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) () from /lib64/libstdc++.so.6
+#7  0x0000000000e58cd3 in DYN::Timers::~Timers (this=0x1639da0 <DYN::Timers::INSTANCE>, __in_chrg=<optimized out>) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:36
+#8  0x00007f3e68117632 in __cxa_finalize () from /lib64/libc.so.6
+#9  0x00007f3e610af983 in __do_global_dtors_aux () from /home/bureaugau/Codes/dynamo/dynawo-worktree/install/gcc7/41_static_compilation_rebase/Debug/static/dynawo/ddb/DYNModelOmegaRef.so
+#10 0x00007ffd8ea58200 in ?? ()
+#11 0x00007f3e6c7576a4 in _dl_close_worker () from /lib64/ld-linux-x86-64.so.2
+
+#0  0x00007f2e6880db16 in __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const () from /lib64/libstdc++.so.6
+#1  0x00007f2e6880a671 in __dynamic_cast () from /lib64/libstdc++.so.6
+#2  0x00007f2e6888129b in std::ctype<char> const& std::use_facet<std::ctype<char> >(std::locale const&) () from /lib64/libstdc++.so.6
+#3  0x00007f2e6888592c in std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double) const () from /lib64/libstdc++.so.6
+#4  0x00007f2e6889163c in std::ostream& std::ostream::_M_insert<double>(double) () from /lib64/libstdc++.so.6
+#5  0x00000000010eb926 in DYN::Timers::~Timers (this=0x163aa40 <DYN::Timers::INSTANCE>, __in_chrg=<optimized out>) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:38
+#6  0x00007f2e67e9b632 in __cxa_finalize () from /lib64/libc.so.6
+#7  0x00007f2e60963793 in __do_global_dtors_aux () from /home/bureaugau/Codes/dynamo/dynawo-worktree/install/gcc7/41_static_compilation_rebase/Debug/static/dynawo/ddb/LOAD_ALPHA_BETA.so
+#8  0x00007ffeedb69410 in ?? ()
+#9  0x00007f2e6c4db6a4 in _dl_close_worker () from /lib64/ld-linux-x86-64.so.2
+
+#0  0x00007f2e67f4a924 in write () from /lib64/libc.so.6
+#1  0x00007f2e67edcd6d in _IO_new_file_write () from /lib64/libc.so.6
+#2  0x00007f2e67edc04f in new_do_write () from /lib64/libc.so.6
+#3  0x00007f2e67eddf59 in __GI__IO_do_write () from /lib64/libc.so.6
+#4  0x00007f2e67ede353 in __GI__IO_file_overflow () from /lib64/libc.so.6
+#5  0x00007f2e6889026a in std::ostream::put(char) () from /lib64/libstdc++.so.6
+#6  0x00007f2e6889045f in std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&) () from /lib64/libstdc++.so.6
+#7  0x00000000010eb98a in DYN::Timers::~Timers (this=0x163aa40 <DYN::Timers::INSTANCE>, __in_chrg=<optimized out>) at /home/bureaugau/Codes/dynamo/dynawo-worktree/dynawo/sources/Common/DYNTimer.cpp:38
+#8  0x00007f2e67e9b632 in __cxa_finalize () from /lib64/libc.so.6
+#9  0x00007f2e60963793 in __do_global_dtors_aux () from /home/bureaugau/Codes/dynamo/dynawo-worktree/install/gcc7/41_static_compilation_rebase/Debug/static/dynawo/ddb/LOAD_ALPHA_BETA.so
+#10 0x00007ffeedb69410 in ?? ()
+#11 0x00007f2e6c4db6a4 in _dl_close_worker () from /lib64/ld-linux-x86-64.so.2

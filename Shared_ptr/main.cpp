@@ -1,14 +1,17 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/weak_ptr.hpp>
+#include <boost/enable_shared_from_this.hpp>
 #include <iostream>
 
 class B;
 
-class A
+class A : public boost::enable_shared_from_this<A>
 {
 public:
     A(boost::shared_ptr<B> b);
     ~A();
+
+    void associateToB();
 
 public:
     boost::shared_ptr<B> ptrB;
@@ -23,16 +26,18 @@ public:
     void setA(boost::shared_ptr<A> a);
 
 public:
-    boost::weak_ptr<A> ptrA;
+  boost::weak_ptr<A> ptrA;
 };
 
 A::A(boost::shared_ptr<B> b)
 {
   std::cout << "A(boost::shared_ptr<B> b)" << std::endl;
   ptrB = b;
-std::cout << "b " << b << std::endl;
-std::cout << "A::this " << this << std::endl;
-  ptrB->setA(boost::shared_ptr<A>(this));
+  //ptrB->setA(getptr()); // not working because I think A is not constructed at this point
+}
+
+void A::associateToB() {
+  ptrB->setA(shared_from_this());
 }
 
 B::B() { std::cout << "B()" << std::endl; }
@@ -43,18 +48,14 @@ A::~A() { std::cout << "~A()" << std::endl; }
 
 void B::setA(boost::shared_ptr<A> a)
 {
-  std::cout << "B::setA(boost::shared_ptr<A> a)" << std::endl;
-  std::cout << "B::this "<< this << std::endl;
-  std::cout << "a "<< a << std::endl;
   ptrA = a;
 }
 
 int main ()
 {
   boost::shared_ptr<B> b(new B());
-  std::cout << "B::this " << b << std::endl;
   boost::shared_ptr<A> a(new A(b));
-  //b->setA(a);
+  a->associateToB();
 
   return 0;
 }

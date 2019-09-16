@@ -112,7 +112,7 @@ boost::shared_ptr<Model> Factory::createModelFromLib(const std::string& lib) {
     ModelDelete deleteModel(factory);
     std::cout << "after ModelDelete deleteModel(factory);" << std::endl;
     model_shared.reset(model, deleteModel);
-    // model_shared.reset(model, [=](Model* model_ptr){ delete model_ptr; });
+    // model_shared.reset(model, [=](Model* model_ptr){ factory_->destroy(model_ptr); });
     std::cout << "after model_shared.reset(model, deleteModel);" << std::endl;
   } else {
     std::cout << "else model = iter->second->create();" << std::endl;
@@ -120,7 +120,7 @@ boost::shared_ptr<Model> Factory::createModelFromLib(const std::string& lib) {
     ModelDelete deleteModel(iter->second);
     std::cout << "after ModelDelete deleteModel(iter->second);" << std::endl;
     model_shared.reset(model, deleteModel);
-    // model_shared.reset(model, [=](Model* model_ptr){ delete model_ptr; });
+    // model_shared.reset(model, [=](Model* model_ptr){ factory_->destroy(model_ptr); });
     std::cout << "after model_shared.reset(model, deleteModel);" << std::endl;
     // models_.push_back(model);
   }
@@ -139,3 +139,5 @@ void ModelDelete::operator()(Model* model) {
 }
 
 // https://thispointer.com/shared_ptr-and-custom-deletor/
+// https://www.bfilipek.com/2016/04/custom-deleters-for-c-smart-pointers.html
+// https://stackoverflow.com/questions/40109135/c-dynamic-loading-of-classes-why-is-a-destroy-function-needed

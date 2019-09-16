@@ -8,8 +8,8 @@ set(CMAKE_INSTALL_PREFIX ..)
 
 set(CMAKE_VERBOSE_MAKEFILE TRUE)
 
-set(LIBRARY1_INCLUDE_DIR /Users/gautier/Codes/CodeExamples/Library/Dynamic/Cmake/Library1)
-set(LIBRARY1_DIR /Users/gautier/Codes/CodeExamples/Library/Dynamic/Cmake/Library1/build/lib)
+set(LIBRARY1_INCLUDE_DIR /home/bureaugau/Codes/CodeExamples/Library/Dynamic/Cmake/Library1)
+set(LIBRARY1_DIR /home/bureaugau/Codes/CodeExamples/Library/Dynamic/Cmake/Library1/build/lib)
 
 include_directories(${PROJECT_SOURCE_DIR})
 include_directories(${LIBRARY1_INCLUDE_DIR})
